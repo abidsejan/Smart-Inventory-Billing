@@ -1,7 +1,7 @@
 
 # 🧾 Smart Inventory Billing System
 
-A **Smart Inventory Billing System** built with **JavaFX** that allows businesses to manage products, inventory, sales, billing, reports, and admin controls through a modern desktop interface.
+A **Smart Inventory Billing System** built with **JavaFX** that allows businesses to manage products, inventory, sales, low stock, billing, reports, and admin controls through a modern desktop interface.
 
 This project demonstrates strong knowledge of **Java, JavaFX, OOP, database integration, and desktop application development** by implementing a real-world business management solution.
 
