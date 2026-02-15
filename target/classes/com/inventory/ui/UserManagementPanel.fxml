@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.ui.UserManagementController" spacing="10" style="-fx-padding: 10;">
+    <HBox spacing="10">
+        <Button text="Add User" onAction="#handleAddNewUser"/>
+        <Button text="Edit User" onAction="#handleEditUser"/>
+        <Button text="Delete User" onAction="#handleDeleteUser"/>
+    </HBox>
+    <TableView fx:id="userTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="usernameColumn" text="Username"/>
+            <TableColumn fx:id="roleColumn" text="Role"/>
+        </columns>
+    </TableView>
+</VBox>

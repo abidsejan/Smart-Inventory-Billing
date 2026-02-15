@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.ui.BillingController" spacing="10" style="-fx-padding: 10;">
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Search Item:"/>
+        <ComboBox fx:id="itemSearchComboBox" prefWidth="200"/>
+        <Label text="Quantity:"/>
+        <TextField fx:id="quantityField" prefWidth="50"/>
+        <Button text="Add to Bill" onAction="#handleAddItemToBill"/>
+    </HBox>
+    <TableView fx:id="billTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="itemNameColumn" text="Item Name"/>
+            <TableColumn fx:id="priceColumn" text="Price"/>
+            <TableColumn fx:id="quantityColumn" text="Quantity"/>
+            <TableColumn fx:id="totalColumn" text="Total"/>
+        </columns>
+    </TableView>
+    <HBox alignment="CENTER_RIGHT" spacing="10">
+        <Label text="Total Amount:"/>
+        <Label fx:id="totalAmountLabel" text="0.0"/>
+        <Button text="Generate Bill" onAction="#handleGenerateBill"/>
+        <Button fx:id="printBillButton" text="Print Bill" onAction="#handlePrintBill" disable="true"/>
+    </HBox>
+</VBox>

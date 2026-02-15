@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.inventory.ui.DashboardController" spacing="20" style="-fx-padding: 20;">
+    <Label text="Dashboard" >
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+    <HBox spacing="20">
+        <VBox style="-fx-background-color: #ffffff; -fx-padding: 20; -fx-border-color: #cccccc; -fx-border-width: 1;">
+            <Label text="Total Items"/>
+            <Label fx:id="totalItemsLabel" text="0">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Label>
+        </VBox>
+        <VBox style="-fx-background-color: #ffffff; -fx-padding: 20; -fx-border-color: #cccccc; -fx-border-width: 1;">
+            <Label text="Total Bills"/>
+            <Label fx:id="totalBillsLabel" text="0">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Label>
+        </VBox>
+        <VBox style="-fx-background-color: #ffffff; -fx-padding: 20; -fx-border-color: #cccccc; -fx-border-width: 1;">
+            <Label text="Low Stock Items"/>
+            <Label fx:id="lowStockItemsLabel" text="0">
+                <font>
+                    <Font name="System Bold" size="18.0" />
+                </font>
+            </Label>
+        </VBox>
+    </HBox>
+</VBox>
